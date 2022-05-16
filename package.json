@@ -21,6 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^5.23.0",
     "@typescript-eslint/parser": "^5.23.0",
     "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
@@ -32,6 +33,8 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "@typegoose/typegoose": "^9.8.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.3.3"
   }
 }
