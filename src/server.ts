@@ -1,12 +1,15 @@
-import app from './config/app'
+import app from "./config/app";
+import connectDatabase from "./config/mongo";
 
-const server = app.listen(app.get('port'), () => {
+const env = app.get("env");
+const port = app.get("port");
+
+const server = app.listen(app.get("port"), async () => {
   console.log(
-    '  App is running at http://localhost:%d in %s mode',
-    app.get('port'),
-    app.get('env')
-  )
-  console.log('  Press CTRL-C to stop\n')
-})
+    `-- App is running at http://localhost:${port} in ${env} mode --`
+  );
 
-export default server
+  await connectDatabase();
+});
+
+export default server;

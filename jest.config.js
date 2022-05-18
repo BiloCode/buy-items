@@ -10,4 +10,5 @@ module.exports = {
   },
   testMatch: ["**/__test__/**/*.test.(ts|js)"],
   testEnvironment: "node",
+  setupFilesAfterEnv: ["jest-extended/all"],
 };
